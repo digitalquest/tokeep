@@ -8,3 +8,7 @@ sudo zypper in VirtualBox-5.0
 zypper install gcc kernel-source make automake autoconf kernel-syms
 sudo /etc/init.d/vboxdrv setup
 less /var/log/vbox-install.log
+
+search: opensuse recompiling virtualbox kernel modules failed
+https://forums.virtualbox.org/viewtopic.php?f=7&t=9936&start=0
+
