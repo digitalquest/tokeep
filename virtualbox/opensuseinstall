@@ -1,0 +1,10 @@
+vi /etc/os-releas
+wget -q http://download.virtualbox.org/virtualbox/rpm/opensuse/12.3/virtualbox.repo
+sudo mv virtualbox.repo /etc/zypp/repos.d/
+sudo zypper refresh
+wget -q https://www.virtualbox.org/download/oracle_vbox.asc
+sudo rpm --import oracle_vbox.asc
+sudo zypper in VirtualBox-5.0
+zypper install gcc kernel-source make automake autoconf kernel-syms
+sudo /etc/init.d/vboxdrv setup
+less /var/log/vbox-install.log
